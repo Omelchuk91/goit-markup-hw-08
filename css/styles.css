@@ -197,13 +197,12 @@ body {
 
 .features {
   padding-top: 94px;
+  padding-bottom: 47px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
-
-  padding-bottom: 47px;
 }
 
 .feature-item {
@@ -236,12 +235,11 @@ body {
 /* ---------------our work--------------- */
 .work-list {
   background-color: var(--white-color);
-
-  padding-bottom: 94px;
 }
 
 .work {
   padding-top: 47px;
+  padding-bottom: 94px;
 }
 
 .work-list {
@@ -285,6 +283,11 @@ body {
   display: flex;
 }
 
+.person {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-name {
   margin-bottom: 50px;
 
@@ -296,7 +299,7 @@ body {
   color: var(--title-text-color);
 }
 .team-title {
-  margin-top: 30px;
+  padding-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -306,9 +309,6 @@ body {
   color: var(--title-text-color);
 }
 .team-position {
-  margin-top: 10px;
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -378,8 +378,12 @@ body {
 
 /* -------  portfolio-------- */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-works {
-  margin-top: 94px;
   margin-bottom: 50px;
 
   display: flex;
@@ -447,10 +451,6 @@ body {
   flex-wrap: wrap;
 }
 
-.section-works-item {
-  padding-bottom: 94px;
-}
-
 .section-works-list {
   width: calc((100% / 3 - 60px));
   width: 370px;
@@ -470,8 +470,8 @@ body {
 }
 
 .portfolio-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
+  padding-top: 20px;
+  padding-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -488,7 +488,7 @@ body {
 }
 
 .portfolio-text {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   font-size: 16px;
   line-height: 1.88;
