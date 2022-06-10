@@ -365,7 +365,7 @@ body {
 .soc-item {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-top: 16px;
 }
 
 .soc-list {
