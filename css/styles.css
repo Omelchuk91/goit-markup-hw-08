@@ -136,7 +136,7 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--accent-text-color);
+  color: var(--primary-text-color);
 }
 
 .header-tel {
