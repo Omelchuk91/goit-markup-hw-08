@@ -33,7 +33,7 @@
             <li class="header-item">
               <a
                 href="./index.html"
-                class="header-link header-link-studio link current"
+                class="header-link current link "
                 >Студия</a
               >
             </li>
@@ -50,7 +50,7 @@
           <li class="header-items">
             <a
               href="mailto:info@devstudio.com"
-              class="header-mail head-nav link current"
+              class="header-contact head-nav link current"
             >
               <svg class="svg" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
@@ -60,7 +60,7 @@
           </li>
           <li class="header-items">
             <a
-              class="header-tel head-nav link current"
+              class="header--contact head-nav link current"
               href="tel:+380961111111"
             >
               <svg class="svg" width="10" height="16">
@@ -82,7 +82,7 @@
               Эффективные решения <br />
               для вашего бизнеса
             </h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
           </div>
         </section>
       </div>
@@ -155,6 +155,11 @@
                 width="370"
                 height="294"
               />
+              <div class="work-top">
+                <h3 class="work-variants">
+                Десктопные приложения
+                </h3>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -163,6 +168,11 @@
                 width="370"
                 height="294"
               />
+              <div class="work-top">
+               <h3 class="work-variants">
+                Мобильные приложения
+              </h3>
+              </div>
             </li>
             <li class="work-item">
               <img
@@ -171,6 +181,11 @@
                 width="370"
                 height="294"
               />
+              <div class="work-top">
+                <h3 class="work-variants">
+                Дизайнерские решения
+              </h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -276,6 +291,7 @@
                   width="270"
                   height="260"
                 />
+                </div>
               <div class="person">
                 <h3 class="team-title">Николай Тарасов</h3>
                 <p lang="en" class="team-position">Marketing</p>
@@ -479,5 +495,17 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-icon" width="18" height="18">
+            <use href="./images/icons.svg#close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
+
+
