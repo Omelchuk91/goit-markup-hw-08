@@ -37,7 +37,7 @@ body {
   margin: 0 auto;
 }
 
-.logo {
+.nav__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -69,7 +69,7 @@ body {
 }
 
 /* -----------header list -----------------*/
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -82,27 +82,27 @@ body {
   margin-right: 93px;
 }
 
-.logo-part {
+.logo__part {
   color: var(--accent-text-color);
 }
 
-.header-nav .link.current {
+.nav .link.current {
   color: var(--accent-text-color);
 }
 
-.header-list {
+.nav__list {
   display: flex;
 }
 
-.header-item {
+.nav__item {
   margin-right: 50px;
 }
 
-.header-item:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
 
-.header-link {
+.nav__link {
   position: relative;
 
   display: block;
@@ -117,7 +117,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link.current::after {
+.nav__link.current::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -128,27 +128,27 @@ body {
   bottom: 0;
 }
 
-.header-contact {
+.contacts__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav .link:hover,
-.header-nav .link:focus,
-.contact-nav .link:hover,
-.contact-nav .link:focus {
+.nav .link:hover,
+.nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--accent-text-color);
 }
 
-.contact-nav {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.contact-nav .header-items + .header-items {
+.contacts .contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
-.head-nav {
+.contacts__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -157,11 +157,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.header-tel {
-  color: var(--primary-text-color);
-}
-
-.svg {
+.contacts__svg {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -187,7 +183,7 @@ body {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -199,7 +195,7 @@ body {
   color: var(--white-color);
 }
 
-.hero-button {
+.hero__button {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -217,8 +213,8 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: #188ce8;
 }
 
@@ -233,21 +229,21 @@ body {
   padding-bottom: 47px;
 }
 
-.features-list {
+.features__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.feature-item {
+.features__item {
   width: 270px;
   margin-right: 30px;
 }
 
-.feature-item:last-child {
+.features__item:last-child {
   margin: 0;
 }
 
-.feature-title {
+.features__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -258,14 +254,14 @@ body {
   color: var(--title-text-color);
 }
 
-.feature-text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
-.box {
+.features__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,7 +272,7 @@ body {
 }
 
 /* ---------------our work--------------- */
-.work-list {
+.work__list {
   background-color: var(--white-color);
 }
 
@@ -285,22 +281,22 @@ body {
   padding-bottom: 94px;
 }
 
-.work-list {
+.work__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.work-item {
+.work__item {
   width: 370px;
   margin-right: 30px;
   position: relative;
 }
 
-.work-item:last-child {
+.work__item:last-child {
   margin: 0;
 }
 
-.work-title {
+.work__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -311,7 +307,7 @@ body {
   color: var(--title-text-color);
 }
 
-.work-top {
+.work__top {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -324,7 +320,7 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-variants {
+.work__variants {
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -333,31 +329,31 @@ body {
   color: var(--white-color);
 }
 
-/* -----------------------team------------------------ */
-.team-item {
+/* -----------------------masters------------------------ */
+.card-list__item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team {
+.masters {
   padding-top: 94px;
   padding-bottom: 94px;
 
   background: #f5f4fa;
 }
 
-.team-list {
+.card-list {
   display: flex;
 }
 
-.person {
+.profile {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-name {
+.masters__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -367,7 +363,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.team-title {
+.profile__item-title {
   padding-bottom: 10px;
 
   font-weight: 500;
@@ -377,7 +373,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.team-position {
+.profile__item-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -385,31 +381,31 @@ body {
   color: var(--primary-text-color);
 }
 
-.team-item:not(:last-child) {
+.card-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-item {
+.card-list__item {
   width: calc((100% - 90px)) / 4;
 }
 
-.soc-item {
+.socials {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
 
-.soc-list {
+.socials__item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
 
-.soc-list:last-child {
+.socials__item:last-child {
   margin-right: 0;
 }
 
-.soc-link {
+.socials__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -422,26 +418,26 @@ body {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc {
+.socials__icon {
   fill: currentColor;
 }
 
-.soc-link:hover,
-.soc-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-text-color);
   color: var(--white-color);
 }
 
 /* -------------------Clients---------------------- */
-.section {
+.clients {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.section-title {
+.clients__title {
   margin-bottom: 50px;
 }
 
-.section-title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -450,14 +446,14 @@ body {
   color: var(--title-text-color);
 }
 
-.clients,
-.clients-link {
+.clients__list,
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   max-width: 170px;
@@ -466,17 +462,17 @@ body {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-text-color);
   color: var(--accent-text-color);
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 
-.clients-list {
+.clients__item {
   justify-content: center;
   width: 170px;
   height: 92px;
@@ -486,7 +482,7 @@ body {
   display: flex;
 }
 
-.clients-list:last-child {
+.clients__item:last-child {
   margin-right: 0;
 }
 /* --------------------footer---------------------- */
@@ -496,7 +492,7 @@ body {
 
   background: var(--hero-color);
 }
-.footer-logo {
+.logo {
   display: inline-block;
   margin-bottom: 20px;
 
@@ -507,7 +503,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.contacts-address {
+.address__location {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -517,14 +513,14 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact-item {
-  display: inline-block;
+.address__item {
+  
   margin-top: 9px;
   margin-bottom: 9px;
 }
 
-.contacts-link,
-.contacts-tel {
+.address__link {
+  display: inline-block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -534,12 +530,10 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-address:hover,
-.contacts-link:hover,
-.contacts-tel:hover,
-.contacts-address:focus,
-.contacts-link:focus,
-.contacts-tel:focus {
+.address__location:hover,
+.address__link:hover,
+.address__location:focus,
+.address__link:focus {
   color: var(--accent-text-color);
 }
 
@@ -619,6 +613,7 @@ body {
   border-radius: 4px;
   outline: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--white-color);
 }
 
 .subscribe-label {
