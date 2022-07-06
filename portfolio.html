@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- шапка сайта -->
@@ -34,7 +34,9 @@
               <a href="./index.html" class="nav__link link">Студия</a>
             </li>
             <li class="nav__item">
-              <a href="portfolio.html" class="nav__link current link">Портфолио</a>
+              <a href="portfolio.html" class="nav__link current link"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__item">
               <a href="" class="nav__link link">Контакты</a>
@@ -55,10 +57,7 @@
             >
           </li>
           <li class="contacts__item">
-            <a
-              class="contacts__link link current"
-              href="tel:+380961111111"
-            >
+            <a class="contacts__link link current" href="tel:+380961111111">
               <svg class="contacts__svg" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -79,9 +78,7 @@
               <button type="button" class="works-nav__button">Все</button>
             </li>
             <li class="works-nav__item">
-              <button type="button" class="works-nav__button">
-                Веб-сайты
-              </button>
+              <button type="button" class="works-nav__button">Веб-сайты</button>
             </li>
             <li class="works-nav__item">
               <button type="button" class="works-nav__button">
@@ -89,14 +86,10 @@
               </button>
             </li>
             <li class="works-nav__item">
-              <button type="button" class="works-nav__button">
-                Дизайн
-              </button>
+              <button type="button" class="works-nav__button">Дизайн</button>
             </li>
             <li class="works-nav__item">
-              <button type="button" class="works-nav__button">
-                Маркетинг
-              </button>
+              <button type="button" class="works-nav__button">Маркетинг</button>
             </li>
           </ul>
 
@@ -104,12 +97,35 @@
             <li class="works-list__item">
               <a href="" class="works-list__link link">
                 <div class="box-works">
-                  <img
-                    src="./images/image-10.jpeg"
-                    alt="Технокряк"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/1-portf-works-desktop-1x.jpeg 1x,
+                        ./images/1-portf-works-desktop-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/1-portf-works-tab-1x.jpeg 1x,
+                        ./images/1-portf-works-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/1-portf-works-mob-1x.jpeg 1x,
+                        ./images/1-portf-works-mob-2x.jpeg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/1-portf-works-mob-1x.jpeg"
+                      alt="Технокряк"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -126,13 +142,36 @@
             <li class="works-list__item">
               <a href="" class="works-link link">
                 <div class="box-works">
-                  <img
-                    src="./images/image-11.jpeg"
-                    alt="Постер New Orlean vs Golden
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/2-portf-works-desktop-1x.jpeg 1x,
+                        ./images/2-portf-works-desktop-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/2-portf-works-tab-1x.jpeg 1x,
+                        ./images/2-portf-works-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/2-portf-works-mob-1x.jpeg 1x,
+                        ./images/2-portf-works-mob-2x.jpeg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/2-portf-works-mob-1x.jpeg"
+                      alt="Постер New Orlean vs Golden
             Star"
-                    width="370"
-                    height="295"
-                  />
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -151,12 +190,35 @@
             <li class="works-list__item">
               <a href="" class="works-link link">
                 <div class="box-works">
-                  <img
-                    src="./images/image-12.jpeg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/3-portf-works-desktop-1x.jpeg 1x,
+                        ./images/3-portf-works-desktop-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/3-portf-works-tab-1x.jpeg 1x,
+                        ./images/3-portf-works-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/3-portf-works-mob-1x.jpeg 1x,
+                        ./images/3-portf-works-mob-2x.jpeg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/3-portf-works-mob-1x.jpeg"
+                      alt="Ресторан Seafood"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -173,12 +235,35 @@
             <li class="works-list__item">
               <a href="" class="works-link link">
                 <div class="box-works">
-                  <img
-                    src="./images/image-13.jpeg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/4-portf-works-desktop-1x.jpeg 1x,
+                        ./images/4-portf-works-desktop-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/4-portf-works-tab-1x.jpeg 1x,
+                        ./images/4-portf-works-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/4-portf-works-mob-1x.jpeg 1x,
+                        ./images/4-portf-works-mob-2x.jpeg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/4-portf-works-mob-1x.jpeg"
+                      alt="Проект Prime"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -195,12 +280,35 @@
             <li class="works-list__item">
               <a href="" class="works-link link">
                 <div class="box-works">
-                  <img
-                    src="./images/image-14.jpeg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/5-portf-works-desktop-1x.jpeg 1x,
+                        ./images/5-portf-works-desktop-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/5-portf-works-tab-1x.jpeg 1x,
+                        ./images/5-portf-works-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/5-portf-works-mob-1x.jpeg 1x,
+                        ./images/5-portf-works-mob-2x.jpeg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/5-portf-works-mob-1x.jpeg"
+                      alt="Проект Boxes"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -217,12 +325,35 @@
             <li class="works-list__item">
               <a href="" class="works-link link">
                 <div class="box-works">
-                  <img
-                    src="./images/image-15.jpeg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/6-portf-works-desktop-1x.jpeg 1x,
+                        ./images/6-portf-works-desktop-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/6-portf-works-tab-1x.jpeg 1x,
+                        ./images/6-portf-works-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/6-portf-works-mob-1x.jpeg 1x,
+                        ./images/6-portf-works-mob-2x.jpeg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/6-portf-works-mob-1x.jpeg"
+                      alt="Inspiration has no Borders"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -239,12 +370,35 @@
             <li class="works-list__item">
               <a href="" class="works-link link">
                 <div class="box-works">
-                  <img
-                    src="./images/image-16.jpeg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/7-portf-works-desktop-1x.jpeg 1x,
+                        ./images/7-portf-works-desktop-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/7-portf-works-tab-1x.jpeg 1x,
+                        ./images/7-portf-works-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/7-portf-works-mob-1x.jpeg 1x,
+                        ./images/7-portf-works-mob-2x.jpeg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/7-portf-works-mob-1x.jpeg"
+                      alt="Издание Limited Edition"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -261,12 +415,35 @@
             <li class="works-list__item">
               <a href="" class="works-link link">
                 <div class="box-works">
-                  <img
-                    src="./images/image-17.jpeg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/9-portf-works-desktop-1x.jpeg 1x,
+                        ./images/9-portf-works-desktop-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/9-portf-works-tab-1x.jpeg 1x,
+                        ./images/9-portf-works-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/9-portf-works-mob-1x.jpeg 1x,
+                        ./images/9-portf-works-mob-2x.jpeg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/9-portf-works-mob-1x.jpeg"
+                      alt="Проект LAB"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -283,12 +460,35 @@
             <li class="works-list__item">
               <a href="" class="works-link link">
                 <div class="box-works">
-                  <img
-                    src="./images/image-18.jpeg"
-                    alt="Growing Business"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/8-portf-works-desktop-1x.jpeg 1x,
+                        ./images/8-portf-works-desktop-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/8-portf-works-tab-1x.jpeg 1x,
+                        ./images/8-portf-works-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/8-portf-works-mob-1x.jpeg 1x,
+                        ./images/8-portf-works-mob-2x.jpeg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/image-18.jpeg"
+                      alt="Growing Business"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="box-works__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -383,7 +583,9 @@
               id="subscribe-label"
               placeholder=" "
             />
-            <label for="subscribe-label" class="subscribe-form__label">E-mail</label>
+            <label for="subscribe-label" class="subscribe-form__label"
+              >E-mail</label
+            >
             <button type="submit" class="subscribe-btn">
               Подписаться
               <svg width="24" height="24" class="subscribe-btn__icon">

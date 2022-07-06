@@ -1,12 +1,8 @@
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .works-nav {
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 }
 
 .works-nav__item {

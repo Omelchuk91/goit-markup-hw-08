@@ -11,14 +11,14 @@
       rel="stylesheet"
     />
     <title>Студия</title>
-    <link  
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- шапка сайта -->
@@ -141,14 +141,17 @@
         </div>
       </section>
 
-      <!-- Чем мы занимаемся -->
       <section class="work">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list list">
             <li class="work__item">
               <img
-                src="./images/image-1.jpg"
+                srcset="
+                  ./images/first-work-1x.jpg  1x,
+                  ./images/first-work-2x.jpeg 2x
+                "
+                src="./images/first-work-1x.jpg"
                 alt="разработка сайтов"
                 width="370"
                 height="294"
@@ -159,7 +162,11 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/image-2.jpg"
+                srcset="
+                  ./images/second-work-1x.jpg  1x,
+                  ./images/second-work-2x.jpeg 2x
+                "
+                src="./images/second-work-1x.jpg"
                 alt="разработка мобильных приложений"
                 width="370"
                 height="294"
@@ -170,7 +177,11 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/image-3.jpg"
+                srcset="
+                  ./images/third-work-1x.jpg  1x,
+                  ./images/third-work-2x.jpeg 2x
+                "
+                src="./images/third-work-1x.jpg"
                 alt="разработка дизайна"
                 width="370"
                 height="294"
@@ -190,11 +201,34 @@
           <ul class="card-list list">
             <li class="card-list__item">
               <div class="card-list__top-wrap">
-                <img
-                  src="./images/image-4.jpeg"
-                  alt="Игорь Демьяненко"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/1-master-desktop-1x.jpeg 1x,
+                      ./images/1-master-desktop-2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/1-master-tab-1x.jpeg 1x,
+                      ./images/1-master-tab-2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/1-master-mob-1x.jpeg 1x,
+                      ./images/1-master-mob-2x.jpeg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/1-master-mob-1x.jpeg"
+                    alt="Игорь Демьяненко"
+                    width="270"
+                  />
+                </picture>
               </div>
               <div class="profile">
                 <h3 class="profile__item-title">Игорь Демьяненко</h3>
@@ -233,12 +267,34 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__top-wrap">
-                <img
-                  src="./images/image-5.jpeg"
-                  alt="Ольга Репина"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/2-master-desktop-1x.jpeg 1x,
+                      ./images/2-master-desktop-2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/2-master-tab-1x.jpeg 1x,
+                      ./images/2-master-tab-2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/2-master-mob-1x.jpeg 1x,
+                      ./images/2-master-mob-2x.jpeg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/2-master-mob-1x.jpeg"
+                    alt="Ольга Репина"
+                    width="270"
+                  />
+                </picture>
               </div>
               <div class="profile">
                 <h3 class="profile__item-title">Ольга Репина</h3>
@@ -277,12 +333,35 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__top-wrap">
-                <img
-                  src="./images/image-6.jpeg"
+                <picture>
+                  <source
+                    srcset="
+                      ./images/3-master-desktop-1x.jpeg 1x,
+                      ./images/3-master-desktop-2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/3-master-tab-1x.jpeg 1x,
+                      ./images/3-master-tab-2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/3-master-mob-1x.jpeg 1x,
+                      ./images/3-master-mob-2x.jpeg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                  src="./images/3-master-mob-1x.jpeg"
                   alt="Николай Тарасов"
                   width="270"
-                  height="260"
                 />
+                </picture>
+                
               </div>
               <div class="profile">
                 <h3 class="profile__item-title">Николай Тарасов</h3>
@@ -321,12 +400,35 @@
             </li>
             <li class="card-list__item">
               <div class="card-list__top-wrap">
-                <img
-                  src="./images/image-7.jpeg"
+                <picture>
+                  <source
+                    srcset="
+                      ./images/4-master-desktop-1x.jpeg 1x,
+                      ./images/4-master-desktop-2x.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/4-master-tab-1x.jpeg 1x,
+                      ./images/4-master-tab-2x.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/4-master-mob-1x.jpeg 1x,
+                      ./images/4-master-mob-2x.jpeg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                  src="./images/4-master-desktop-1x.jpeg"
                   alt="Михаил Ермаков"
                   width="270"
-                  height="260"
                 />
+                </picture>
+                
               </div>
               <div class="profile">
                 <h3 class="profile__item-title">Михаил Ермаков</h3>
@@ -420,7 +522,7 @@
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div>
           <a lang="en" href="" class="logo logo--footer link">
@@ -506,7 +608,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
