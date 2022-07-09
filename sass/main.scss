@@ -7,12 +7,14 @@
 
 
 @import "./components/container";
-
 @import "./components/header";
 @import "./components/socials";
+@import "./components/logo";
 @import "./components/footer";
 @import "./components/modal";
 
+
+@import "./layout/contacts";
 @import "./layout/hero";
 @import "./layout/features";
 @import "./layout/work";

@@ -1,0 +1,48 @@
+.contacts {
+  display: none;
+  margin-left: auto;
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include desktop {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &__svg {
+    fill: currentColor;
+    margin-right: 8px;
+    @include desktop {
+      margin-right: 10px;
+    }
+  }
+  & .contacts__item + .contacts__item {
+    @include tablet {
+      margin-top: 10px;
+    }
+
+    @include desktop {
+      margin-top: 0;
+      margin-left: 50px;
+    }
+  }
+}
