@@ -811,7 +811,7 @@ textarea {
 }
 
 .contacts__link:hover, .contacts__link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .contacts__svg {
