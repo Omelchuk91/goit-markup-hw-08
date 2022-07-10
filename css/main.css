@@ -92,6 +92,22 @@ textarea {
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .main-head {
@@ -127,8 +143,6 @@ textarea {
 
 .nav__link {
   position: relative;
-  display: block;
-  padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
@@ -834,7 +848,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .contacts .contacts__item + .contacts__item {
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
@@ -1095,13 +1109,20 @@ textarea {
 }
 
 .masters__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .masters__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .profile__item-title {
@@ -1152,15 +1173,19 @@ textarea {
 
 .clients__title {
   margin-bottom: 30px;
-}
-
-.clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list,
@@ -1226,7 +1251,7 @@ textarea {
 .works-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px 8px;
+  gap: 8px;
   margin-bottom: 40px;
 }
 
@@ -1240,12 +1265,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .works-nav {
     margin-bottom: 50px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .works-nav .works-nav__item {
-    margin-left: 8px;
   }
 }
 
@@ -1350,10 +1369,6 @@ textarea {
   transform: translateY(0);
 }
 
-.works-list__link {
-  display: block;
-}
-
 .project__title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -1364,6 +1379,7 @@ textarea {
 }
 
 .project {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;

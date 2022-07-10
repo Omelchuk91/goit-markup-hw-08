@@ -27,14 +27,18 @@
 }
 
 .masters__title {
-  margin-bottom: 50px;
-
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
+  @include desktop {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .profile__item-title {
   padding-bottom: 10px;
